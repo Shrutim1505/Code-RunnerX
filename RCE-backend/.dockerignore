@@ -1,0 +1,9 @@
+node_modules
+DockerFile
+.git
+.env
+.vscode
+dist
+/src/uploads
+.serverless
+.webpack

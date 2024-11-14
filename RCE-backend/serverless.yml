@@ -1,0 +1,35 @@
+service: rcebackend
+
+custom:
+  serverless-offline:
+    httpPort: 8000
+    noPrependStageInUrl: true
+    reloadHandler: true
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: "ap-south-1"
+  memorySize: 512
+  timeout: 10
+  logRetentionInDays: 90
+  logs:
+    httpApi: true
+  httpApi:
+    cors: true
+
+functions:
+  api:
+    handler: index.handler
+    events:
+      - http:
+          path: /api/code/execute
+          method: post
+          cors: true
+
+package:
+  individually: true
+
+plugins:
+  - serverless-bundle
+  - serverless-offline
