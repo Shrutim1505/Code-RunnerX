@@ -28,15 +28,17 @@ CodeRunnerX: A Scalable, Dockerized Code Execution Sandbox as the name suggests,
 - Resize the font of the editor
 - Light/Dark Mode
 - Code Suggestion and Autocompletion
-## Packages Used
-| Packages |  |
-| ------ | ------ |
-|Docker|To build containerized applications|
-|Serverless framework|To build serverless applications|
-|Ace Editor|Online IDE Code Editor|
-|AWS Lambda|Serverless Compute service|
-|NextJS| To build frontend application  |
-|Cloudwatch|Monitor lambda function logs|
-|API Gateway|To trigger lambda functions|
+## Packages and Their Purpose
+
+| **Tool/Package**      | **Description**                          |
+|------------------------|------------------------------------------|
+| 🐳 **Docker**          | Build and manage containerized apps      |
+| ⚡ **Serverless Framework** | Framework for serverless applications   |
+| 🖊️ **Ace Editor**       | An online IDE and code editor            |
+| 🖥️ **AWS Lambda**       | Serverless compute service              |
+| 🌐 **Next.js**          | Framework for frontend development       |
+| 📊 **CloudWatch**       | Monitor and log Lambda function activity |
+| 🔗 **API Gateway**      | Manage and trigger Lambda APIs           |
+ 
 
 
