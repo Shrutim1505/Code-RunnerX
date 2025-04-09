@@ -49,7 +49,11 @@ export interface Output {
   Loading: boolean
   Output: string
   Error: string
+  unusedCallback?: () => void;
+
 }
 export interface ISidebar {
   click: (value: string) => void
+  ghostFunction?: () => void;
+
 }
