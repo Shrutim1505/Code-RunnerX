@@ -29,6 +29,8 @@ export interface IIde {
   handleFileChange: (file: FileList) => void
 }
 
+
+
 export interface IIdeNav {
   Fontsize: (value: string) => void
   Lang: string
